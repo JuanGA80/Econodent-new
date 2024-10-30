@@ -533,9 +533,13 @@ header i {
 /*Botones Flotantes*/
 .botones-flotantes {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2vh;
+  right: 2vw;
   z-index: 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .botones-flotantes a {
   display: flex;
@@ -546,22 +550,14 @@ header i {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.275s ease-in-out;
+  color: #fff;
+  /* transition: all 0.275s ease-in-out; */
 }
 .botones-flotantes #whats {
   background-color: #3cb878;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
-.botones-flotantes #tel {
-  background-color: gray;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.botones-flotantes .btn-tel  {
+  background-color: #2973ba;
 }
 .botones-flotantes #whats:hover {
   background-color: #268353;
@@ -572,7 +568,7 @@ header i {
 .botones-flotantes img {
   width: 40px;
 }
-.botones-flotantes #menu-contacto {
+/* .botones-flotantes #menu-contacto {
   background-color: #2973ba;
   z-index: 14;
   position: relative;
@@ -587,7 +583,7 @@ header i {
 }
 .show-tel {
   bottom: 90px !important;
-}
+} */
 .promotions {
   flex-direction: column;
   padding: 60px 1rem;
@@ -821,4 +817,13 @@ header i {
     grid-template-columns: repeat(3, minmax(300px, 400px));
     gap: 60px;
   }
+
+  /* Botones flotantes */
+  .botones-flotantes {
+    position: fixed;
+    bottom: 2vh;
+    right: 1vw;
+    gap: 10px;
+  }
+
 }

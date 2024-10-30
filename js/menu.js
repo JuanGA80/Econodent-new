@@ -23,7 +23,7 @@ containerOverlay.addEventListener('click', () => {
 const menucon = document.getElementById('menu-contacto')
 const whats = document.getElementById('whats')
 const tel = document.getElementById('tel')
-menucon.addEventListener('click', function () {
-  whats.classList.toggle('show-whats')
-  tel.classList.toggle('show-tel')
-})
+// menucon.addEventListener('click', function () {
+//   whats.classList.toggle('show-whats')
+//   tel.classList.toggle('show-tel')
+// })
