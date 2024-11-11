@@ -630,6 +630,11 @@ header i {
   transition: all 0.275s ease-in-out;
   transform: rotate(5deg);
 }
+
+.promotion-item:nth-child(1) img, .promotion-item:nth-child(2) img {
+  border: 5px solid #b1082d;
+}
+
 @media (min-width: 768px) {
   .header-1 {
     height: 95px;
@@ -814,7 +819,7 @@ header i {
     padding: 0;
   }
   .grid-promotions {
-    grid-template-columns: repeat(3, minmax(300px, 400px));
+    grid-template-columns: repeat(2, minmax(400px, 500px));
     gap: 60px;
   }
 
